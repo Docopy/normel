@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./styles/main.css">
+<link rel="stylesheet" href="./styles/media.css">
+<link rel="icon" href="./images/ico.png" type="image/png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Нормализаторы напряжения с функцией энергосбережения для трехфазных сетей | Нормализатор Normel</title>
+</head>
+
+
+<body>
+
+
+<div class="gototop">&#9650;</div>
+
+
+<div class="header">
+<div class="conteiner">
+<div class="header_main">
+<div class="header_main_logo">
+<a href="./index.html"><img src="./images/logo.svg" alt="normel" style="width: 100%;"></a>
+</div>
+<div class="header_main_adress">
+<img src="./images/place.png" alt="adress">
+Молдова, Кишинёв, Дечебал 99 оф.5</div>
+<div class="header_main_right">
+<div class="header_main_phone">
+<img src="./images/phone.png" alt="phone">
+<a href="#">060 04 13 04</a>
+</div>
+<div class="header_main_lang">
+<a class="active" href="#">RU</a>
+<a href="./ro/">RO</a>
+</div>
+<div class="menu">
+<a class="menu-triger" href="#"></a>
+<div class="menu-popup">
+<a class="menu-close" href="#"></a>
+<ul>
+<li><a href="./index.html">ГЛАВНАЯ</a></li>
+<li><a href="./normalizator.html#technology">НОРМАЛИЗАТОР NORMEL</a></li>
+<li><a href="./nomenklatura.html#prices">НОМЕНКЛАТУРА</a></li>
+<li><a href="./company.html#history">О КОМПАНИИ</a></li>
+<li><a href="./questions.html#quest_1">ВОПРОСЫ И ОТВЕТЫ</a></li>
+<li><a href="./contacts.html">КОНТАКТЫ</a></li>
+</ul>						
+</div>
+</div>
+</div>
+</div>
+<div class="header_menu">
+<ul class="header_menu_list">
+<li><a href="./index.html">ГЛАВНАЯ</a></li>
+<li><a href="./normalizator.html#technology">НОРМАЛИЗАТОР NORMEL</a></li>
+<li><a href="./nomenklatura.html#prices">НОМЕНКЛАТУРА</a></li>
+<li><a href="./company.html#history">О КОМПАНИИ</a></li>
+<li><a href="./questions.html#quest_1">ВОПРОСЫ И ОТВЕТЫ</a></li>
+<li><a class="active" href="./contacts.html">КОНТАКТЫ</a></li>
+</ul>
+</div>
+<div class="header_animation"></div>
+</div>
+</div>
+
+
+<div class="blog">
+<div class="conteiner">
+<div class="blog_main">
+<div class="blog_main_menu">
+<h3>Контакты</h3>
+
+</div>
+
+<div class="blog_main_box">
+
+
+<b>Адрес:</b><br>
+630049, Россия, г. Новосибирск, пр. Красный , 220, корпус 14А
+<br><br>
+ 
+
+<b>Телефоны:</b><br>
++7 (383) 209-06-48 (+ english)<br>
++7 (383) 209-06-45 (служба технической поддержки)<br>
++7 (383) 209-06-47<br>
++7 (383) 209-06-49<br><br>
+
+ 
+
+<b>Электронная почта:</b><br>
+info@normel.ru (отдел продаж)<br>
+info@normel.ru (работа с официальными представителями)<br><br>
+
+ 
+
+<b>Наименование организации:</b><br>
+ООО «АВЭК»<br><br>
+
+ 
+
+<b>Реквизиты организации:</b><br>
+ИНН/КПП 5402518874/540201001<br><br>
+
+Р/с 40702810344070004432<br><br>
+
+Сибирский Банк ПАО Сбербанк г. Новосибирск <br><br>
+
+БИК 045004641<br>
+К/с 30101810500000000641<br>
+
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+<footer>
+<div class="conteiner">
+<div class="footer_main">
+<div class="footer_main_l">
+<p>Нормализатор Normel.<br>
+Все права защищены.</p>
+</div>
+<div class="footer_main_r"><img src="./images/logo_footer.png" alt="footer"></div>
+</div>
+</div>
+</footer>
+
+<script src="./scripts/jquery-3.6.0.min.js"></script>
+<script>
+
+$(document).ready(function(){
+$(window).scroll(function () {
+/*если прокрутка больше 300 показ. кнопку*/
+if ($(this).scrollTop() > 100) {
+$('.gototop, .alert').fadeIn();
+/*если нет то скрываем кнопку*/
+} else {
+$('.gototop, .alert').fadeOut();
+}
+});
+/*при клике по кнопке переходим вверх стр.*/
+$('.gototop').click(function () {
+$('body,html').animate({
+scrollTop: 0
+}, 700);
+return false;
+});
+    
+    
+var bw = jQuery( window ).width();
+if(bw > 50){
+ 
+	window.scroll({
+	top: 0, 
+	left: 0, 
+	behavior: 'smooth'
+});
+}
+    
+    
+    
+    
+});            
+
+$(function() {
+var $menu_popup = $('.menu-popup');
+
+$(".menu-triger, .menu-close").click(function(){
+$menu_popup.slideToggle(300, function(){
+if ($menu_popup.is(':hidden')) {
+$('body').removeClass('body_pointer');
+} else {
+$('body').addClass('body_pointer');
+}					
+});  
+return false;
+});			
+
+$(document).on('click', function(e){
+if (!$(e.target).closest('.menu').length){
+$('body').removeClass('body_pointer');
+$menu_popup.slideUp(300);
+}
+});
+});
+
+
+
+    
+
+    
+</script>
+
+
+</body>
+</html>
